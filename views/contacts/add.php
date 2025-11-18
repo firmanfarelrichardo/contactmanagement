@@ -55,9 +55,9 @@ if (!isset($_SESSION['logged_in'])) {
 
                 <div>
                     <label class="block text-sm font-medium text-slate-700 mb-1">Foto Profil (Max 2MB)</label>
-                    <input type="file" name="photo" accept=".jpg,.jpeg,.png"
+                    <input type="file" name="photo" accept=".jpg,.jpeg,.png,.heic"
                         class="block w-full text-sm text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100">
-                    <p class="mt-1 text-xs text-slate-500">Format: JPG, JPEG, PNG.</p>
+                    <p class="mt-1 text-xs text-slate-500">Format: JPG, JPEG, PNG, HEIC.</p>
                 </div>
 
                 <div class="pt-4">
