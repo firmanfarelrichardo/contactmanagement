@@ -28,7 +28,7 @@ if (isset($_FILES['photo']) && $_FILES['photo']['error'] === UPLOAD_ERR_OK) {
     $fileExtension = strtolower(pathinfo($originalName, PATHINFO_EXTENSION));
     $allowedExtensions = ['jpg', 'jpeg', 'png', 'gif', 'heic'];
 
-    if (in_array($fileExtension, $allowedExtensions) && $fileSize < 2000000) {
+    if (in_array($fileExtension, $allowedExtensions) && $fileSize < 5000000) {
         $newFileName = md5(time() . $originalName) . '.' . $fileExtension;
         $uploadFileDir = '../../public/uploads/';
         $dest_path = $uploadFileDir . $newFileName;

@@ -32,7 +32,7 @@ if (isset($_FILES['photo']) && $_FILES['photo']['error'] === UPLOAD_ERR_OK) {
     $allowedfileExtensions = array('jpg', 'gif', 'png', 'jpeg', 'heic');
     
     if (in_array($fileExtension, $allowedfileExtensions)) {
-        if ($fileSize < 2000000) { 
+        if ($fileSize < 5000000) { 
             $newFileName = md5(time() . $originalName) . '.' . $fileExtension;
             
             $uploadFileDir = '../../public/uploads/';
@@ -46,7 +46,7 @@ if (isset($_FILES['photo']) && $_FILES['photo']['error'] === UPLOAD_ERR_OK) {
                 exit();
             }
         } else {
-            $_SESSION['error'] = "Ukuran file terlalu besar (Max 2MB).";
+            $_SESSION['error'] = "Ukuran file terlalu besar (Max 5MB).";
             header('Location: ../../views/contacts/add.php');
             exit();
         }
