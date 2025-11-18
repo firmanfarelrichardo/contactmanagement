@@ -4,23 +4,6 @@ Sistem manajemen kontak berbasis web yang modern, aman, dan responsif. Aplikasi 
 
 Proyek ini dikembangkan sebagai bagian dari Tugas Akhir Praktikum Pemrograman Web (Modul 4).
 
-## Fitur Unggulan
-
-### 🛡️ Keamanan & Backend
-* **Secure Authentication:** Sistem Login & Register menggunakan `password_hash()` (Bcrypt) dan proteksi *Session Fixation* (`session_regenerate_id`).
-* **Database Security:** Menggunakan **PDO Prepared Statements** sepenuhnya untuk mencegah serangan *SQL Injection*.
-* **Data Sanitization:** Perlindungan terhadap *XSS (Cross-Site Scripting)* pada setiap output data.
-* **CRUD Operations:** Kemampuan penuh untuk Menambah, Membaca, Mengedit, dan Menghapus kontak.
-* **File Handling Logic:**
-    * Validasi tipe file (JPG, PNG, HEIC) dan ukuran file (Max 5MB).
-    * Penanganan khusus format **HEIC** (menampilkan badge indikator).
-    * Pembersihan otomatis file foto lama saat dihapus atau diperbarui (*Garbage Collection*).
-
-### Antarmuka (UI/UX)
-* **Modern Design:** Menggunakan framework Utility-First **Tailwind CSS**.
-* **Responsive:** Tampilan optimal di perangkat desktop dan mobile.
-* **Smart Fallback:** Jika kontak tidak memiliki foto atau foto rusak, sistem otomatis menampilkan avatar inisial berwarna menggunakan API UI-Avatars.
-
 ---
 
 ## Galeri Aplikasi
