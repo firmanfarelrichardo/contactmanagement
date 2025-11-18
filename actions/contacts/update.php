@@ -26,7 +26,7 @@ if (isset($_FILES['photo']) && $_FILES['photo']['error'] === UPLOAD_ERR_OK) {
     $originalName = $_FILES['photo']['name'];
     $fileSize = $_FILES['photo']['size'];
     $fileExtension = strtolower(pathinfo($originalName, PATHINFO_EXTENSION));
-    $allowedExtensions = ['jpg', 'jpeg', 'png', 'gif'];
+    $allowedExtensions = ['jpg', 'jpeg', 'png', 'gif', 'heic'];
 
     if (in_array($fileExtension, $allowedExtensions) && $fileSize < 2000000) {
         $newFileName = md5(time() . $originalName) . '.' . $fileExtension;

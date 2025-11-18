@@ -29,7 +29,7 @@ if (isset($_FILES['photo']) && $_FILES['photo']['error'] === UPLOAD_ERR_OK) {
     $fileNameCmps = explode(".", $originalName);
     $fileExtension = strtolower(end($fileNameCmps));
 
-    $allowedfileExtensions = array('jpg', 'gif', 'png', 'jpeg');
+    $allowedfileExtensions = array('jpg', 'gif', 'png', 'jpeg', 'heic');
     
     if (in_array($fileExtension, $allowedfileExtensions)) {
         if ($fileSize < 2000000) { 
