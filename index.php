@@ -104,8 +104,8 @@ try {
                                 </div>
                             </td>
                             <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
-                                <a href="#" class="text-blue-600 hover:text-blue-900 mr-3">Edit</a>
-                                <a href="#" class="text-red-600 hover:text-red-900" onclick="return confirm('Yakin hapus kontak ini?')">Hapus</a>
+                                <a href="views/contacts/edit.php?id=<?= $contact['id']; ?>" class="text-blue-600 hover:text-blue-900 mr-3">Edit</a>
+    <a href="actions/contacts/delete.php?id=<?= $contact['id']; ?>" class="text-red-600 hover:text-red-900" onclick="return confirm('Yakin hapus kontak ini?')">Hapus</a>
                             </td>
                         </tr>
                         <?php endforeach; ?>
